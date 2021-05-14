@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script
+         src="https://kit.fontawesome.com/833ce41a45.js"
+         crossorigin="anonymous"
+      ></script>
+      <link
+         rel="stylesheet"
+         href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css"
+      />
+      <link
+         href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+         rel="stylesheet"
+      />
+      <link rel="stylesheet" href="./css/style.css" />
+      <title>Form Validator</title>
+   </head>
+   <body class="bg-gray-900 h-screen flex items-center px-5">
+      <div class="bg-white mx-auto p-2 w-full max-w-sm md:max-w-md rounded-xl">
+         <div class="card-title text-center my-5">
+            <h1 class="font-semibold text-gray-800 text-3xl mb-2">Sign Up Now</h1>
+            <p class="text-gray-400">It's easy and only takes a minute!</p>
+         </div>
+         <form
+            id="form"
+            class="form-control flex flex-col px-4 md:px-14 mt-10 relative"
+         >
+            <div class="input-group flex flex-col my-3">
+               <label for="username" class="text-gray-500 mb-2"
+                  ><i class="fas fa-user fa-lg mx-1"></i> Username</label
+               >
+               <input
+                  type="text"
+                  id="username"
+                  class="p-2 rounded-md border-2 border-gray-400 hover:bg-gray-100"
+               />
+               <span id="username-message" class="input-error mt-1 ml-1 text-sm"
+                  >Error message</span
+               >
+            </div>
+            <div class="input-group flex flex-col my-3">
+               <label for="email" class="text-gray-500 mb-2"
+                  ><i class="fas fa-envelope fa-lg mx-1"></i> Email</label
+               >
+               <input
+                  type="text"
+                  id="email"
+                  class="p-2 rounded-md border-2 border-gray-400 hover:bg-gray-100"
+               />
+               <span id="email-message" class="input-error mt-1 ml-1 text-sm"
+                  >Error message</span
+               >
+            </div>
+            <div id="password-group" class="input-group flex flex-col my-3 relative">
+               <label for="password" class="text-gray-500 mb-2"
+                  ><i class="fas fa-unlock fa-lg mx-1"></i> Password</label
+               >
+               <input
+                  type="password"
+                  id="password"
+                  class="p-2 rounded-md border-2 border-gray-400 hover:bg-gray-100 w-full"
+               />
+
+               <i class="fi-sr-eye password-toggle text-gray-500"></i>
+               <span id="password-message" class="input-error mt-1 ml-1 text-sm"
+                  >Error message</span
+               >
+            </div>
+            <div class="input-group flex flex-col my-3">
+               <label for="password2" class="password-label text-gray-500 mb-2"
+                  ><i class="fas fa-unlock fa-lg mx-1"></i> Confrim Password
+               </label>
+               <input
+                  type="password"
+                  id="password2"
+                  class="p-2 rounded-md border-2 border-gray-400 hover:bg-gray-100"
+               />
+               <span id="password2-message" class="input-error mt-1 ml-1 text-sm"
+                  >Error message</span
+               >
+            </div>
+            <button
+               type="submit"
+               class="bg-blue-500 text-white text-lg rounded-md my-2 py-3 cursor-pointer hover:bg-blue-600"
+            >
+               Sign Up
+            </button>
+         </form>
+      </div>
+      <script src="js/script.js"></script>
+   </body>
+</html>

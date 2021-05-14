@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+
+:root {
+   --success-color: #2ecc65;
+   --error-color: #e7473c;
+}
+
+body {
+   font-family: 'Poppins', sans-serif;
+}
+
+input {
+   transition: box-shadow 0.3s;
+}
+
+input:focus {
+   outline: none;
+   box-shadow: 0 0 1px 3px rgba(59, 131, 246, 0.418);
+}
+
+button {
+   transition: box-shadow 0.3s;
+}
+
+button:focus {
+   outline: none;
+   box-shadow: 0 0 1px 3px rgba(59, 131, 246, 0.418);
+}
+
+.form-control .input-group.success input {
+   border-color: var(--success-color);
+}
+.form-control .input-group.error input {
+   border-color: var(--error-color);
+}
+
+.form-control .input-error {
+   color: var(--error-color);
+   visibility: hidden;
+}
+.form-control .input-group.error .input-error {
+   visibility: visible;
+}
+.form-control .input-group.success .input-error {
+   visibility: hidden;
+}
+
+.form-control .input-group .password-toggle {
+   position: absolute;
+   top: 50%;
+   left: 100%;
+   z-index: 10;
+   transform: translate(-150%, -25%);
+   cursor: pointer;
+}
