@@ -1,2 +1,2 @@
-# form_validator
+# Form validator
 A simple form validator
